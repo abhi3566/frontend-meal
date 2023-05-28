@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffcccb;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+main {
+  padding: 20px;
+}
+
+#searchResults,
+#mealDetails,
+#favouriteMeals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.meal-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.meal-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.meal-card h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.meal-card p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.favourite-btn {
+  margin-top: 10px;
+}
+
+
+.fa-heart {
+  color: red;
+}
+
+.fa-search {
+  color: #443030;
+  size: 0cap;
+}
+
+.youtube-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: red;
+}

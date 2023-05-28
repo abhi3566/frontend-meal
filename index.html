@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meals App</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header class="bg-primary text-white text-center py-5">
+    <h1>Meals App</h1>
+  </header>
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Search Meals &nbsp;<span><i class="fas fa-search"></i></span></h2>
+        <form id="searchForm">
+          <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search meals...">
+          <button type="submit" class="btn btn-primary btn-block">Search</button>
+          <br>
+          <div id="searchResultsContainer" class="row"></div>
+        </form>
+        <br>
+        <div>
+          <h4>My Favourite Meals &nbsp;<span><i class="fas fa-heart"></i></span></h4>
+          <div id="favouriteMealsContainer"></div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h2>Search Results</h2>
+        <div id="searchResultsDisplayContainer" class="row"></div>
+      </div>
+
+      <!-- Modal -->
+<div class="modal fade" id="mealModal" tabindex="-1" aria-labelledby="mealModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mealModalLabel">Meal Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="" alt="" id="mealModalImg" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h4 id="mealModalTitle"></h4>
+            <p><strong>Category:</strong> <span id="mealModalCategory"></span></p>
+            <p><strong>Area:</strong> <span id="mealModalArea"></span></p>
+            <h5>Ingredients</h5>
+            <ul id="mealModalIngredients"></ul>
+            </div>
+            <div class="row ml-1 p-3">
+              <div class="col-md-12">
+                <h5>Instructions</h5>
+              <p id="mealModalInstructions"></p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </main>
+  <footer class="text-center py-3">
+    <p>&copy; 2023 Meal App. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
